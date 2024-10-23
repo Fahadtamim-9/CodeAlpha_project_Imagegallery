@@ -1,0 +1,171 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Navigation Bar */
+nav {
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 1.8em;
+}
+
+nav .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-links a,
+nav .nav-links input,
+nav .nav-links button {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+nav .nav-links input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+nav .nav-links button {
+    background: #555;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav .nav-links button:hover {
+    background: #666;
+}
+
+/* Main Banner */
+header {
+    background: url(https://w0.peakpx.com/wallpaper/126/780/HD-wallpaper-bugatti-chiron-2018-garage-hypercar-car-assembly-new-silver-chiron-swedish-sports-cars-bugatti.jpg) no-repeat center center/cover;
+    text-align: center;
+    color: #fca904;
+    padding: 100px 0;
+    position: relative;
+}
+
+header h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Car Categories Sections */
+section {
+    padding: 40px 0;
+    background: #fff;
+    border-bottom: 2px solid #ddd;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery-item {
+    flex: 1 1 calc(20% - 15px);
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 8px;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-item p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* About Us Section */
+#about {
+    background: #f9f9f9;
+}
+
+.about-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.about-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
